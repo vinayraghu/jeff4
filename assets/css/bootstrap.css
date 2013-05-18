@@ -5466,7 +5466,7 @@ header {
   .dateformat {
     width: 100px;
     height: 100px;
-    margin: 20px;
+    margin: 10px auto;
   }
 }
 .dateformat-small {
@@ -5481,7 +5481,7 @@ header {
   margin-left: 20px;
   padding: 4px;
 }
-@media screen and (min-width: 900px) and (max-width: 1160px) {
+@media screen and (min-width: 800px) and (max-width: 1160px) {
   .dateformat-small {
     display: none;
   }

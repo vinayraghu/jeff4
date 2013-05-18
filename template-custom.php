@@ -61,8 +61,7 @@ Template Name: Custom Template1
                   <h4 class="push-right">Recent Work</h4> <!-- Recent Work -->   
                     <?php foreach( $recent_posts as $recent ) { ?>
                         <div class="feed-data">
-                          <div class="span1"></div><!-- spacer -->
-                          <div class="span2">
+                          <div class="span2 offset1">
                             <div class="dateformat-small dateformat-small-<?php echo $counter++ ?>"><!-- colored circle here -->
                               <p class="date-small">
                                 <?php  
@@ -72,8 +71,7 @@ Template Name: Custom Template1
 
                             </div>                  
                           </div>
-                          <div class="span1"></div><!-- spacer -->
-                          <div class="span8">
+                          <div class="span8 offset1">
                             <h4>
                               <?php echo '<a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a>'; ?>
                             </h4><!-- Feed Title goes here -->
@@ -98,8 +96,7 @@ Template Name: Custom Template1
                   <h4 class="push-right">Latest Posts from the blog</h4>
                     <?php foreach( $recent_posts as $recent ) { ?>
                         <div class="feed-data">
-                          <div class="span1"></div><!-- spacer -->
-                          <div class="span2">
+                          <div class="span2 offset1">
                             <div class="dateformat-small dateformat-small-<?php echo $counter++ ?>"><!-- colored circle here -->
                               <p class="date-small">
                                 <?php  
