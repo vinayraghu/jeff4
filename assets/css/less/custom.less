@@ -1,0 +1,280 @@
+/* Styling the Navbar */
+
+.navbar-inner{
+	background: url('../img/kindajean.png');
+	margin-top: -40px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2){
+	background: url('../img/kindajean_@2x.png');
+	margin-top: -40px;	
+}
+
+/*Styling the body background*/
+@media only screen and (max-width: 767px) {
+	body{
+		  background: url('../img/bg-tablet.jpg') center center no-repeat;
+		  -webkit-background-size: 100%;
+		  background-size: 100%;
+		  background-attachment: fixed;
+	}
+}
+
+/*Styling the header part*/
+
+/*Header transition*/
+
+header{
+	-webkit-transition: all 0.4s ease-in;
+	-moz-transition: all 0.4s ease-in;
+	-ms-transition: all 0.4s ease-in;
+	-o-transition: all 0.4s ease-in;
+	transition: all 0.4s ease-in;
+}
+
+/*Header Images */
+
+/*Mobile Device*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+	header{
+		background: url('../img/glass-mobile.jpg') no-repeat top center;
+		padding: 77px 0 0 0;
+	}
+}
+
+/*Small Screen Retina*/
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 480px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 480px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 480px),
+only screen and (        min-device-pixel-ratio: 2)      and (max-width: 480px),
+only screen and (                min-resolution: 192dpi) and (max-width: 480px),
+only screen and (                min-resolution: 2dppx)  and (max-width: 480px) { 
+	header{
+		background: url('../img/glass-mobile@2x.jpg') no-repeat top center;
+	}
+}
+
+//Tablet
+
+@media only screen and (min-width: 480px) and (max-width: 1024px){
+	header{
+		background: url('../img/glass-tablet.jpg') no-repeat top center;
+		padding: 164px 0 0 0;
+	}
+}
+
+/*Tablet Retina*/
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 1024px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 1024px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 1024px),
+only screen and (        min-device-pixel-ratio: 2)      and (max-width: 1024px),
+only screen and (                min-resolution: 192dpi) and (max-width: 1024px),
+only screen and (                min-resolution: 2dppx)  and (max-width: 1024px) { 
+	header{
+		background: url('../img/glass-tablet@2x.jpg') no-repeat top center;
+
+	}
+}
+
+/*Big Screen*/
+
+@media only screen and (min-width: 1025px){
+	header{
+		background: url('../img/glass-desktop.jpg') no-repeat top center;
+		padding: 230px 0 0 0;
+	}
+}
+/*Big Screen Retina*/
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) { 
+	header{
+		background: url('../img/glass-desktop@2x.jpg') no-repeat top center;
+	}
+}
+
+
+
+/*Date Format*/
+
+.dateformat{
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	border: 6px solid @white;
+	color: @white; 
+	font-family: 'LeagueGothicRegular', Arial, sans-serif;	
+	margin: 10px auto;
+}
+
+/*Background variations*/
+
+.dateformat-1{
+	background-color: @green;
+}
+.dateformat-2{
+	background-color: @blue;
+}
+.dateformat-3{
+	background-color: @violet;
+}
+.dateformat-4{
+	background-color: @maroon;
+}
+
+@media screen and (max-width: 480px) {
+	.dateformat{
+		width: 100px;
+		height: 100px;
+		margin: 20px;
+	}
+}
+.dateformat-small{
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	border: 6px solid @white;
+	color: @white;
+	font-family: 'LeagueGothicRegular', Arial, sans-serif;	
+	margin-left: 20px;
+	padding: 4px;
+}
+@media screen and (min-width: 900px) and (max-width: 1160px){
+	.dateformat-small{
+		display: none;
+	}
+}
+
+.dateformat-small-1{
+	background-color: @brown;
+}
+.dateformat-small-2{
+	background-color: @weirdgreen;
+}
+.dateformat-small-3{
+	background-color: @maroon;
+}
+.dateformat-small-4{
+	background-color: @deepgreen;
+}
+
+.date{
+	text-align: center;
+	padding-top: .40em;
+	font-size: 3em;
+	font-family: 'LeagueGothicRegular';
+}
+
+.date-small{
+	text-align: center;
+/*	padding-top: .25em;*/
+	font-size: 1em;
+	font-family: 'LeagueGothicRegular';
+}
+.monthandyear{
+	text-align: center;
+	margin-top: .5em;
+	font-size: 1.8em;
+}
+.monthandyear-small{
+	text-align: center;
+/*	margin-top: .25em;*/
+	font-size: 1em;
+}
+
+/*Content posts to have a margin on top*/
+.push-down{
+	margin-top: 20px;
+}
+.push-right{
+	margin-left: 50px;
+}
+.push-center{
+	margin: 20px auto;
+}
+
+/*Article Entry Type */
+
+.article-entry{
+	  font: 1.2em/1.8em georgia;
+	  text-align: justify;
+}
+
+/*Comments Number*/
+.comments-number{
+	font-size: 1.2em;
+	margin: 4px;
+}
+
+/*Read More*/
+.read-more{
+	color: @black;
+	font-style: italic;
+	a{
+		color: @black;
+		&:hover{
+			text-decoration: none;
+			color: @white;
+		};
+	}
+}
+
+@media screen only and (min-width: 1200px) {
+	.read-more{
+			margin: 10px 20px 20px 0;
+	}
+}
+
+/*Sidebar*/
+.sidebar{
+	background: rgba(255,255,255,0.9);
+	box-shadow: 5px 0 5px;
+}
+
+.display-picture{
+	margin-left: 40px;
+	margin-right: 20px;
+	text-align: justify;
+	font: 1.2em/1.8em georgia;
+	a:hover{
+		text-decoration: none;
+	}
+}
+
+/*Social Media Icons*/
+
+.social-media{
+	width: 32px;
+	height: 32px;
+}
+.feed-data{
+	display: block;
+}
+
+/*Line with ornament*/
+
+hr.ornament {
+	background: url('../img/hr.png') 50% 0 no-repeat;
+	height: 55px;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.bird{
+	min-height: 400px;
+	background: url('../img/bird.png') 90% 100% no-repeat;
+}
