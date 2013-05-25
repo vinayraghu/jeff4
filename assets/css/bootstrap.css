@@ -209,10 +209,12 @@ body {
   font-size: 12px;
   line-height: 20px;
   color: #333333;
-  background: url('../img/1.jpg') center center no-repeat;
   -webkit-background-size: 100%;
   background-size: 100%;
   background-attachment: fixed;
+}
+@media screen (min-width: 1000px) {
+  background: url('../img/1.jpg') center center no-repeat;
 }
 a {
   color: #0088cc;
